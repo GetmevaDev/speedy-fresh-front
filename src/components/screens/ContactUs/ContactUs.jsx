@@ -1,5 +1,5 @@
 import React from 'react'
-import RootLayout from "@/app/layout";
+import RootLayout from "@/components/layout/layout";
 import GeneralHero from "@/components/ui/GeneralHero/GeneralHero";
 import ContactMap from '@/components/ui/ContactMap/ContactMap';
 import Breadcrumbs from '@/components/ui/Breadcrumbs/Breadcrumbs';

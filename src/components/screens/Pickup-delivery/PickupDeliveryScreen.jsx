@@ -1,4 +1,4 @@
-import RootLayout from "@/app/layout";
+import RootLayout from "@/components/layout/layout";
 import GeneralHero from "@/components/ui/GeneralHero/GeneralHero";
 import React from "react";
 import ImageWithText from "@/components/ui/ImageWithText/ImageWithText";

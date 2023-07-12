@@ -1,5 +1,5 @@
 import React from "react";
-import RootLayout from "@/app/layout";
+import RootLayout from "@/components/layout/layout";
 import Efficient from "@/components/ui/Efficient/Efficient";
 import GeneralHero from "@/components/ui/GeneralHero/GeneralHero";
 import ImageBanner from "@/components/ui/ImageBanner/ImageBanner";

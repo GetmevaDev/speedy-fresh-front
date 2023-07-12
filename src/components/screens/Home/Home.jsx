@@ -1,4 +1,4 @@
-import RootLayout from "@/app/layout";
+import RootLayout from "@/components/layout/layout";
 import Address from "@/components/ui/Address/Address";
 import Benefits from "@/components/ui/Benefits/Benefits";
 import Hero from "@/components/ui/Hero/Hero";

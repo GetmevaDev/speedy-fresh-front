@@ -1,4 +1,4 @@
-import RootLayout from "@/app/layout";
+import RootLayout from "@/components/layout/layout";
 import Breadcrumbs from "@/components/ui/Breadcrumbs/Breadcrumbs";
 import GeneralHero from "@/components/ui/GeneralHero/GeneralHero";
 import ImageWithText from "@/components/ui/ImageWithText/ImageWithText";

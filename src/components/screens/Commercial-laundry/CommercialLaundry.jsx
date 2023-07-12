@@ -1,5 +1,5 @@
 import React from "react";
-import RootLayout from "@/app/layout";
+import RootLayout from "@/components/layout/layout";
 import GeneralHero from "@/components/ui/GeneralHero/GeneralHero";
 import ImageWithText from "@/components/ui/ImageWithText/ImageWithText";
 import TextBanner from "@/components/ui/TextBanner/TextBanner";

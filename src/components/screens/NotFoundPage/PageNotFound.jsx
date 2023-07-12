@@ -1,27 +1,10 @@
 import React from "react";
 import "../NotFoundPage/404.css";
-import RootLayout from "@/app/layout";
+import RootLayout from "@/components/layout/layout";
 import Link from "next/link";
 
-{
-  /* <div className="PageNotFound">
-<Header />
-<main className="main">
-  <div className="container">
 
-    <div className="main__body">
-      <img loading="lazy" src={img_404} alt="img 404" />
-      <h3>Page Not Found</h3>
-      <Link to="/">Back To Home</Link>
-    </div>
-
-  </div>
-</main>
-<Footer />
-</div> */
-}
 function PageNotFound({ attributes }) {
-  console.log(attributes);
   return (
     <RootLayout
       attributes={attributes}
