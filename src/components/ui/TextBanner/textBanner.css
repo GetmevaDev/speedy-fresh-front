@@ -1,0 +1,57 @@
+/* textBanner start */
+.textBanner {
+  background: #0f0f0f;
+  margin: 100px 0 50px;
+  border-radius: 30px;
+  padding: 50px 60px;
+}
+
+
+
+.textBanner h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.textBanner p {
+  text-align: center;
+}
+
+.textBanner h4 {
+  margin-top: 36px;
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.2px;
+
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .textBanner {
+    margin: 10px 0;
+    padding: 30px 40px;
+  }
+}
+@media (max-width: 769px) {
+  .textBanner {
+    margin: 60px 0 50px;
+    padding: 26px 32px;
+  }
+  .textBanner h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .textBanner {
+    margin: 20px 0;
+    padding: 20px 30px;
+  }
+
+  
+  .textBanner h4 {
+    font-size: 16px;
+  }
+}

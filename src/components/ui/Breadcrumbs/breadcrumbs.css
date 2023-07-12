@@ -1,0 +1,19 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.breadcrumbs .previous {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  color: #00aeef;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.breadcrumbs .current {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+}

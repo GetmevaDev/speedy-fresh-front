@@ -1,0 +1,69 @@
+.addressSection {
+  padding-top: 100px;
+}
+.address-wrapper {
+  margin: 50px 0 100px;
+  display: grid;
+  gap: 0 23px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.address-card {
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 52px 0;
+}
+
+.address-card h5 {
+  margin-top: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.address-card h4 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.address-card a {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.address-card h5::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: var(--secondary-color);
+  margin: 30px auto;
+}
+.address__title {
+  text-align: center;
+}
+@media(max-width:800px) {
+  .address-wrapper {
+    margin: 50px 0 100px;
+    gap:  23px 0;
+    grid-template-columns: repeat(1, 0.8fr);
+    justify-content: center;
+}
+.address-card h4 {
+  font-size: 24px;
+}
+.address-card {
+  padding: 30px 15px;
+}
+}

@@ -1,0 +1,138 @@
+.washProcces {
+  margin-bottom: 100px;
+}
+.washProcces h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.pickUpProcess {
+  margin-top: 100px;
+}
+.pickUpProcess h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.washProcces .washProcess__card-wprapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 23px;
+  position: relative;
+}
+.pickUpProcess .pickUpProcess__card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0 10px;
+  position: relative;
+}
+.washCard {
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.washProcces .washCard h4 {
+  margin: 50px 0 10px;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.pickUpProcess .washCard h4 {
+  margin: 50px 0 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.washProcces .washCard p {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.pickUpProcess .washCard p {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+.arrow-right-full {
+  position: absolute;
+}
+
+.washProcces .arrow-right-full:nth-of-type(1) {
+  top: 10%;
+  right: 30%;
+}
+.washProcces .arrow-right-full:nth-of-type(2) {
+  top: 10%;
+  left: 30%;
+}
+.pickUpProcess .arrow-right-full:nth-of-type(1) {
+  top: 12%;
+  left: 17%;
+}
+.pickUpProcess .arrow-right-full:nth-of-type(2) {
+  top: 12%;
+  left: 57%;
+}
+.pickUpProcess .arrow-right-full:nth-of-type(3) {
+  top: 12%;
+  left: 78%;
+}
+.pickUpProcess .arrow-right-full:nth-of-type(4) {
+  top: 12%;
+  left: 37%;
+}
+
+.washAndFold .hero__content {
+  width: 500px;
+  margin-top: 62px;
+}
+
+.washAndFold .aboutBanner {
+  margin-top: 0;
+}
+@media(max-width:900px) {
+  .pickUpProcess .arrow-right-full {
+    display: none;
+  }
+  .pickUpProcess .pickUpProcess__card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px ;
+  }
+}
+
+@media(max-width:769px) {
+  .pickUpProcess .pickUpProcess__card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .washProcces .arrow-right-full {
+    display: none;
+  }
+  .washProcces .washProcess__card-wprapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px ;
+    
+  }
+}
+
+@media(max-width:600px) {
+  .pickUpProcess .pickUpProcess__card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+ 
+  .washProcces .washProcess__card-wprapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 0 ;
+    
+  }
+  .washCard  {
+    padding: 25px 10px;
+  }
+}
