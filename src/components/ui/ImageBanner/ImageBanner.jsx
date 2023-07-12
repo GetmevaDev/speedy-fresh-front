@@ -1,4 +1,4 @@
-import "../ImageBanner/ImageBanner.css"
+import "../ImageBanner/imageBanner.css"
 import React from "react";
 
 function ImageBanner({title, subtitle, img}) {

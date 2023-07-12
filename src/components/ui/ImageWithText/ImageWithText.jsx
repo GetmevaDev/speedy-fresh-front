@@ -1,5 +1,5 @@
 import React from "react";
-import "../ImageWithText/ImageWithText.css";
+import "../ImageWithText/imageWithText.css";
 
 function ImageWithText({ img,img_alt, title, paragraph, listArr }) {
   return (
