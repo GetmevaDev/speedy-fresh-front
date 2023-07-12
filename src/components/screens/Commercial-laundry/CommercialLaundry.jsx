@@ -3,7 +3,6 @@ import RootLayout from "@/components/layout/layout";
 import GeneralHero from "@/components/ui/GeneralHero/GeneralHero";
 import ImageWithText from "@/components/ui/ImageWithText/ImageWithText";
 import TextBanner from "@/components/ui/TextBanner/TextBanner";
-import "../Pickup-delivery/pickupDeliveryScreen.css";
 import Breadcrumbs from "@/components/ui/Breadcrumbs/Breadcrumbs";
 
 export default function CommercialLaundryScreen({ attributes }) {

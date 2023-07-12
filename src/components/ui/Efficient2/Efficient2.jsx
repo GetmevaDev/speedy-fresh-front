@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "../Efficient2/efficient2.css"
+
 
 
 function Efficient2({title, items}) {

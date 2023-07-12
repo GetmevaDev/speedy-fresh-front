@@ -1,6 +1,5 @@
 
 import React from "react";
-import '../Burger/burger.css'
 
 function Burger() {
   function getBurger() {

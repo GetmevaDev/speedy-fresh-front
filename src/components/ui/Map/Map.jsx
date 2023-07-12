@@ -1,5 +1,4 @@
 import React from "react";
-import "../Map/map.css"
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 function Map({mapUrl, title, mapItem}) {

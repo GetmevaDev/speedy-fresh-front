@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../Benefits/benefits.css'
+
 
 function BenefitsCard({ img, title, description }) {
   return (

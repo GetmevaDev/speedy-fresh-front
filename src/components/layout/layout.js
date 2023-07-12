@@ -1,6 +1,5 @@
 import Header from "@/components/layout/Header/Header";
-import "../../css/fonts.css";
-import "../../css/globals.css";
+
 import Footer from "@/components/layout/Footer/Footer";
 import Meta from "@/components/seo/Meta";
 

@@ -1,15 +1,6 @@
 import React from "react";
-import "../Drayers/drayers.css";
 
-// function DryersCard({img, title, text}) {
-//   return (
-//     <div className='dryers__card'>
-//         <img loading="lazy" src={img} alt ={title} />
-//         <h4>{title}</h4>
-//         <p>{text}</p>
-//     </div>
-//   )
-// }
+
 function Drayers({ title, items }) {
   return (
     <div className="dryers">

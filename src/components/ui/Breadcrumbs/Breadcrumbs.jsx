@@ -1,5 +1,4 @@
 import React from "react";
-import "../Breadcrumbs/breadcrumbs.css";
 import Link from "next/link";
 
 function Breadcrumbs({ current, sub }) {

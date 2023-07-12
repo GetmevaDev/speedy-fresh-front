@@ -1,5 +1,4 @@
 import React from "react";
-import "../NotFoundPage/404.css";
 import RootLayout from "@/components/layout/layout";
 import Link from "next/link";
 

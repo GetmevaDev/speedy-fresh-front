@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import '../BurgerMenu/burgerMenu.css'
 import Link from 'next/link';
 export const navItem = [
   {

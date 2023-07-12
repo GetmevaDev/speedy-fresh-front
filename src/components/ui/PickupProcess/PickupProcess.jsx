@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import '../PickupProcess/pickupProcess.css'
 function PickupProcess({title, items}) {
   return (
     <section className="pickUpProcess ">

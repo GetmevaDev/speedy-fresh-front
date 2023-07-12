@@ -1,7 +1,6 @@
 import React from "react";
 
-import "../HomePriceBanner/homePriceBanner.css"
-// import BannerImg from "../images/home-price.png"
+
 import Link from "next/link";
 function HomePriceBanner({title, description, btn_title, btn_link, image}) {
   return (

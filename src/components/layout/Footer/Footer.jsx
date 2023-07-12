@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import "../Footer/footer.css";
+import styles from "./Footer.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -57,28 +57,28 @@ function Footer() {
   };
   const route = usePathname();
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
      
-      <ul className="footer__nav">
+      <ul className={styles.footer__nav}>
         {navItem.map((item) => {
           return (
             <Fragment key={item.id}>
-              <li  className="nav__item">
+              <li  className={styles.nav__item}>
                 <Link
                   onClick={() => handleClick(item)}
-                  className={route === item.url ? "active" : "nav__link"}
+                  className={route === item.url ? styles.active : styles.nav__link}
                   href={item.url}
                 >
                   {item.title}
                 </Link>
               </li>
               {item.SubLink.length > 0 && (
-                <ul className="child__list">
+                <ul className={styles.child__list}>
                   {item.SubLink.map((sub_item) => {
                     return (
-                      <li key = {sub_item.id} className='nav__item'>
+                      <li key = {sub_item.id} className={styles.nav__item}>
                         <Link
-                          className='nav__link'
+                          className={styles.nav__link}
                           href={item.url + sub_item.url}
                         >
                           {sub_item.title}

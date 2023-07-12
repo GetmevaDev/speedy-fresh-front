@@ -1,5 +1,4 @@
 import React from 'react'
-import '../GeneralHero/generalHero.css'
 
 function GeneralHero({title, subtitle, image, callBtnText, callBtnUrl, pickupBtnText, pickupBtnUrl }) {
 

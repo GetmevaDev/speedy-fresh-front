@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import "../WashProcess/washProcess.css";
 
 
 function WashProcess({ title, items }) {

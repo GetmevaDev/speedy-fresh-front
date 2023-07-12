@@ -1,7 +1,7 @@
 import RootLayout from "@/components/layout/layout";
 import GeneralHero from "@/components/ui/GeneralHero/GeneralHero";
 import React from "react";
-import "../Wash-fold/washFold.css";
+
 import ImageWithText from "@/components/ui/ImageWithText/ImageWithText";
 import WashProcess from "@/components/ui/WashProcess/WashProcess";
 import TextBanner from "@/components/ui/TextBanner/TextBanner";

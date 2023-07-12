@@ -1,5 +1,4 @@
 import React from "react";
-import '../TextBanner/textBanner.css'
 
 function TextBanner({title,subtitle,  text}) {
   return (

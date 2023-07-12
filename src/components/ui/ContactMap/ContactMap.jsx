@@ -1,5 +1,4 @@
 import React from 'react'
-import '../ContactMap/contactMap.css'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 
 function ContactMap({iframeForMap, items}) {

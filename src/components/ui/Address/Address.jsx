@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../Address/address.css'
+
 
 function AddressCard({ img, title, subtitle, tel }) {
   return (
