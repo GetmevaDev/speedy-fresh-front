@@ -93,29 +93,31 @@ function Footer() {
         })}
       </ul>
 
-      <div className="footer__rights">
-        <div className="container footer__rights-wrapper">
+      <div className={styles.footer__rights}>
+        <div className="container">
+        <div className={styles.footer__rights_wrapper}>
           <p>
             © 2023 <span>Speedy Fresh Laundromat</span> All rights reserved
           </p>
-          <div className="footer__logo">
-            <div className="footer__logo-wrapper">
+          <div className={styles.footer__logo}>
+            <div className={styles.footer__logo_wrapper}>
               <img loading="lazy" src="/images/RGM.svg" alt="rgm" />
               <p>
                 Web Design & Digital Marketing by
-                <a href="https://robertgerov.com/" className="rgm">
+                <a href="https://robertgerov.com/" className={styles.rgm}>
                   Robert Gerov Media
                 </a>
               </p>
             </div>
 
             <Link
-              className="accessibility-policy"
+              className={styles.accessibility_policy}
               href="/accessibility-policy-and-commitment-statement"
             >
               Accessibility Policy and Commitment Statement
             </Link>
           </div>
+        </div>
         </div>
       </div>
     </footer>

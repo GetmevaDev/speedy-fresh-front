@@ -53,7 +53,7 @@
 .footer__rights {
   background-color: #0f0f0f;
 }
-.footer__rights-wrapper {
+.footer__rights_wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,7 +72,7 @@
 .footer__logo {
   width: 300px;
 }
-.footer__logo .accessibility-policy {
+.footer__logo .accessibility_policy {
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
@@ -81,11 +81,11 @@
   transition: 300ms;
 
 }
-.footer__logo .accessibility-policy:hover {
+.footer__logo .accessibility_policy:hover {
   color: var(--primary-color);
   transition: 300ms;
 }
-.footer__logo-wrapper {
+.footer__logo_wrapper {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
