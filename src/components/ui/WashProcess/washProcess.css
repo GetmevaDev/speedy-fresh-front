@@ -135,4 +135,8 @@
   .washCard  {
     padding: 25px 10px;
   }
+  .washAndFold .hero__content {
+    width: 378px;
+    margin-top: 62px;
+}
 }

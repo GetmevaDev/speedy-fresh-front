@@ -1,11 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import styles from "./Header.module.css";
 import Link from "next/link";
 // import { fetchData } from '@/components/utils/fetchData'
 
 import Image from "next/image";
-import { usePathname,  } from "next/navigation";
+import { usePathname } from "next/navigation";
+import Burger from "@/components/ui/Burger/Burger";
+import BurgerMenu from "@/components/ui/BurgerMenu/BurgerMenu";
 export const navItem = [
   {
     id: 1,
@@ -43,7 +45,7 @@ export const navItem = [
       },
     ],
   },
-  
+
   {
     id: 6,
     title: "Contact us",
@@ -59,56 +61,86 @@ function Header() {
     setIsActive(isActive === menuItem ? null : menuItem);
   };
 
-
+  
 
   const router = usePathname();
   return (
-    <header className="header">
+    <header className={styles.header}>
       <div className="container">
-        <div className={router ==='/' ? styles.home_navbar: styles.navbar}>
-          {router !=='/' && 
-          <div className={styles.logo}>
-            <Link href="/" className={styles.logo__link}>
-              <Image
-                width={141}
-                height={186}
-                src="/images/logo.webp"
-                alt="logo"
-                priority
-              />
-            </Link>
-          </div>
-          }
+        <div className={router === "/" ? styles.home_navbar : styles.navbar}>
+          {router !== "/" && (
+            <div className={styles.logo}>
+              <Link href="/" className={styles.logo__link}>
+                <Image
+                  width={141}
+                  height={186}
+                  src="/images/logo.webp"
+                  alt="logo"
+                  priority
+                />
+              </Link>
+            </div>
+          )}
 
           <nav>
             <ul className={styles.nav}>
               {navItem.map((item) => {
                 return (
-                  <li key={item.id} className={item.SubLink.length > 0 ? `${styles.nav__item} ${styles.parent_item}`  : styles.nav__item }>
+                  <li
+                    key={item.id}
+                    className={
+                      item.SubLink.length > 0
+                        ? `${styles.nav__item} ${styles.parent_item}`
+                        : styles.nav__item
+                    }
+                  >
                     <Link
                       onClick={() => handleClick(item)}
-                      className={ router === item.url ? styles.active : styles.nav__link}
+                      className={
+                        router === item.url ? styles.active : styles.nav__link
+                      }
                       href={item.url}
                     >
                       {item.title}
                     </Link>
-                      {item.SubLink.length > 0 && <Image className={router ==='/' ? styles.home_arrow_down : styles.arrow_down} src='/images/arrow-down.svg' width={6} height={3} alt="arrow" />}
+                    {item.SubLink.length > 0 && (
+                      <Image
+                        className={
+                          router === "/"
+                            ? styles.home_arrow_down
+                            : styles.arrow_down
+                        }
+                        src="/images/arrow-down.svg"
+                        width={6}
+                        height={3}
+                        alt="arrow"
+                      />
+                    )}
 
-                      {item.SubLink.length > 0 && <ul className={styles.child_link}>
-                          {item.SubLink.map((sub_item)=>{
-                            return(
-                              <li key={sub_item.id} className={styles.nav__item}>
-                                <Link className={styles.nav__link} href={item.url + sub_item.url}>{sub_item.title}</Link>
-                              </li>
-                            )
-                          })}
-                        </ul>}
-                      
+                    {item.SubLink.length > 0 && (
+                      <ul className={styles.child_link}>
+                        {item.SubLink.map((sub_item) => {
+                          return (
+                            <li key={sub_item.id} className={styles.nav__item}>
+                              <Link
+                                className={styles.nav__link}
+                                href={item.url + sub_item.url}
+                              >
+                                {sub_item.title}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
                   </li>
                 );
               })}
             </ul>
           </nav>
+
+          <Burger />
+          <BurgerMenu />
         </div>
       </div>
     </header>

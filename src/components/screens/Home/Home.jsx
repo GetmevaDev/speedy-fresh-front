@@ -7,7 +7,6 @@ import Map from "@/components/ui/Map/Map";
 import React from "react";
 
 function HomeScreen({ attributes }) {
-  console.log(attributes);
   return (
     <RootLayout
       attributes={attributes}

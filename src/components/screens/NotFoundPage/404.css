@@ -1,0 +1,38 @@
+.main__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__body h3 {
+  margin: 50px 0;
+}
+.main__body a {
+  width: 250px;
+  height: 60px;
+  background: #00aeef;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  text-align: center;
+  letter-spacing: -0.04px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .main__body img {
+    width: 90%;
+  }
+  .main__body {
+    margin-top: 50px;
+    
+  }
+}

@@ -1,0 +1,42 @@
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+}
+.overlay {
+  z-index: 4  ;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(25, 26, 26, 0.324);
+}
+.stopScrolling {
+  overflow: hidden;
+}
+.burger.activ .bar:nth-child(2){
+  opacity: 0;
+}
+.burger.activ .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.burger.activ .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+@media(max-width:700px) {
+  .burger {
+    display: block;
+  }
+}
