@@ -75,6 +75,8 @@ const Meta = ({
           key="twitter:description"
         />
       )}
+
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
     </Head>
     {children}
   </>

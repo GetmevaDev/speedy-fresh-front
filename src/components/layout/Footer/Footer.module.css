@@ -110,7 +110,7 @@
   }
 }
 @media (max-width: 600px) {
-  .footer__rights-wrapper {
+  .footer__rights_wrapper {
     flex-direction: column;
   }
   .footer__logo {

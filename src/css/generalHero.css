@@ -66,12 +66,12 @@
 
 @media (max-width: 1440px) {
   .hero__content {
-    width: 550px;
+    width: 600px;
   }
 }
 @media (max-width: 1150px) {
   .hero__content {
-    width: 471px;
+    width: 600px;
   }
   .hero__image {
     width: 584px;
@@ -84,7 +84,7 @@
     height: 335px;
 }
   .hero__content {
-    width: 372px;
+    width: 600px;
   }
   .btn--primary {
     width: 170px;

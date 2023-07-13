@@ -7,18 +7,19 @@ import Map from "@/components/ui/Map/Map";
 import React from "react";
 
 function HomeScreen({ attributes }) {
+  console.log(attributes);
   return (
     <RootLayout
       attributes={attributes}
       title={attributes?.SEO?.title}
       description={attributes?.SEO?.description}
       image={attributes?.SEO?.image}
-      twitterCard={attributes?.SEO?.twitter_card}
-      twitterDescription={attributes?.SEO?.twitter_description}
-      twitterDomain={attributes?.SEO?.twitter_domain}
-      twitterImage={attributes?.SEO?.twitter_image}
-      twitterTitle={attributes?.SEO?.twitter_title}
-      twitterUrl={attributes?.SEO?.twitter_url}
+      twitterCard={attributes?.SEO?.twitterCard}
+      twitterDescription={attributes?.SEO?.twitterDescription}
+      twitterDomain={attributes?.SEO?.twitterDomain}
+      twitterImage={attributes?.SEO?.twitterImage}
+      twitterTitle={attributes?.SEO?.twitterTitle}
+      twitterUrl={attributes?.SEO?.twitterUrl}
     >
       <Hero
         title={attributes?.Hero?.title}
