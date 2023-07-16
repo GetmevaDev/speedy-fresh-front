@@ -12,7 +12,6 @@ import TextBanner from "@/components/ui/TextBanner/TextBanner";
 import PriceTextBanner from "@/components/ui/PriceTextBanner/PriceTextBanner";
 
 function PricingScreen({ attributes }) {
-  console.log(attributes);
   return (
     <RootLayout
       attributes={attributes}
