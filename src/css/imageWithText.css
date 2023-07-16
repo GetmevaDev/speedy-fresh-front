@@ -9,7 +9,11 @@
 .imageWithText:nth-of-type(2n+1) .aboutBanner{
   flex-direction: row-reverse;
 }
-
+.pricing__image__text__banner .aboutBanner {
+  display: flex;
+  align-items:normal;
+  margin-top: 62px;
+}
 
 .aboutBanner__text h3 {
   margin-bottom: 20px;

@@ -1,0 +1,117 @@
+.pricingCard {
+  margin-top: 100px;
+}
+.pricingCard h3 {
+  text-align: center;
+}
+.pricingCard__wrapper {
+  margin-top: 60px;
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+}
+.pricingCardItem {
+  display: flex;
+  flex-direction: column;
+}
+.pricingCardItem {
+  background: #0f0f0f;
+}
+.pricingCardItem:nth-of-type(2n + 1) .pickup_btn {
+  display: none;
+}
+.pricingCardItem:nth-of-type(2n) .tel_btn {
+  display: none;
+}
+.pricingCardItem h4 {
+  border-bottom: 1px solid #252525;
+  border-right: 1px solid #252525;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.2px;
+  padding: 30px;
+}
+.pricingCardItem:nth-last-child(1) h4 {
+  border-right: none;
+}
+.pricingCardItem__img {
+  height: 154px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricingCardItem ul {
+  padding: 20px 30px 0 10px;
+  border-bottom: 1px solid #252525;
+  border-right: 1px solid #252525;
+
+  flex-grow: 1;
+}
+.pricingCardItem:nth-last-child(1) ul {
+  border-right: none;
+}
+.pricingCardItem a {
+  color: #00aeef;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -0.2px;
+  padding: 36px 0 38px;
+  border-right: 1px solid #252525;
+}
+.pricingCardItem:nth-last-child(1) a {
+  border-right: none;
+}
+.pricingCardItem ul li {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  list-style: disc;
+  color: #adadad;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+}
+.pricingCardBottomBtn {
+  padding: 30px 0;
+  border-radius: 0px 0px 10px 10px;
+  background: #1a1a1a;
+}
+.pricingCardBottomBtn p {
+  color: #adadad;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.2px;
+}
+@media (max-width: 1100px) {
+  .pricingCardItem h4 {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .pricingCard__wrapper {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricingCard__wrapper {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 20px;
+  }
+  .pricingCardItem h4 {
+    padding: 0 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .pricingCardItem a {
+    padding: 15px 0;
+  }
+}

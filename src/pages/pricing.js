@@ -1,10 +1,29 @@
 import React from 'react'
+import { fetchData } from "@/components/utils/fetchData";
+import PricingScreen from '@/components/screens/Pricing/Pricing';
+export async function getStaticProps() {
+  const {
+    data: { attributes },
+  } = await fetchData("pricing-page");
 
-function Pricing() {
+  if (!attributes) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      attributes,
+    },
+    revalidate: 60, // In seconds
+  };
+}
+
+
+function Pricing({attributes}) {
   return (
-    <div>
-      Pricing
-    </div>
+    <PricingScreen attributes={attributes} />
   )
 }
 

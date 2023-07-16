@@ -26,7 +26,7 @@ export const navItem = [
     SubLink: [],
   },
   {
-    id: 7,
+    id: 5,
     title: "Pickup & Delivery",
     url: "/pickup-delivery",
     SubLink: [
@@ -40,6 +40,12 @@ export const navItem = [
 
   {
     id: 6,
+    title: "Pricing",
+    url: "/pricing",
+    SubLink: [],
+  },
+  {
+    id: 7,
     title: "Contact us",
     url: "/contact-us",
     SubLink: [],
