@@ -5,7 +5,7 @@ function Drayers({ title, items }) {
   return (
     <div className="dryers">
       <div className="container">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <div className="dryers__card-wrapper">
           {items?.map((item) => {
             return (

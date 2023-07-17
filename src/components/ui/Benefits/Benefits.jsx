@@ -14,7 +14,7 @@ function BenefitsCard({ img, title, description }) {
 export default function Benefits({bg_img, title, subtitle, ourBenefitsCardArr}) {
   return (
     <div className="benefits" style={{backgroundImage: `url(${bg_img})`}}>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <p className="benefits__subtitle">{subtitle}</p>
       <div className="benefitsCard-wrappper container">
         {ourBenefitsCardArr.map((item)=> {

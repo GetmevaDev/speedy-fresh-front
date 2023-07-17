@@ -22,7 +22,7 @@ function PageNotFound({ attributes }) {
           <div className="container">
             <div className="main__body">
               <img loading="lazy" src={attributes?.img?.data?.attributes?.url} alt="img 404" />
-              <h3>{attributes?.title}</h3>
+              <h2>{attributes?.title}</h2>
               
               <Link href={attributes?.btn_link}>{attributes?.btn_title}</Link>
             </div>

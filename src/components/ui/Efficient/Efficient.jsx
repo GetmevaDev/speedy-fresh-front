@@ -5,7 +5,7 @@ function Efficient({title, description, items}) {
   return (
     <div className="efficient">
       <div className="container">
-       {title && <h3>{title}</h3>}
+       {title && <h2>{title}</h2>}
        {description && <p>  {description}  </p>}
         <div className="efficient-wrapper">
           {items?.map((item, index)=>{

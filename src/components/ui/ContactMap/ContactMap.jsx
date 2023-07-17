@@ -6,14 +6,21 @@ function ContactMap({iframeForMap, items}) {
     <section className="map_address container">
         <div className="map_address__grid">
           <div className="map_address__content">
-            {items?.map((item)=> {
+            {items?.map((item, index)=> {
+            let isSecond = index === 1;
+
               return(
                 <div className="mapContent__text" key={item.id}>  
                   <img src={item?.image?.data?.attributes?.url} alt='icon' />
                   <span>
-                   <ReactMarkdown>{item.text}</ReactMarkdown>
-
-                  </span>
+                  {isSecond ? (
+                    <a href="tel:(718)4900334">
+                      <ReactMarkdown>{item.text}</ReactMarkdown>
+                    </a>
+                  ) : (
+                    <ReactMarkdown>{item.text}</ReactMarkdown>
+                  )}
+                </span>
                  
               </div>
               )

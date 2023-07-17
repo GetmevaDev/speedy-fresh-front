@@ -30,8 +30,9 @@ const Meta = ({
       </Script>
      
       <title>{title}</title>
-    
-      <link rel="canonical" href={twitterUrl} />
+        
+      
+      <link rel="canonical" href="https://speedyfreshlaundromat.com/" />
       <meta property="og:type" content="website" />
       {title && <meta name="og:title" content={title} key="title" />}
       {description && (

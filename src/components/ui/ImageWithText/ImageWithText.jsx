@@ -7,7 +7,7 @@ function ImageWithText({ img,img_alt, title, paragraph, listArr }) {
       <div className= "aboutBanner">
         
         <div className="aboutBanner__text">
-          {title && <h3>{title}</h3>} 
+          {title && <h2>{title}</h2>} 
           {paragraph && <p>{paragraph}</p>}
           {listArr &&
           <ul>

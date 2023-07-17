@@ -11,7 +11,7 @@ function Hero({title, subtitle, image, callBtnText, callBtnUrl, pickupBtnText, p
           {title && <h1>{title}</h1>}
           {subtitle && <h4>{subtitle}</h4>}
           <div className={styles.hero__cta}>
-            <a href={pickupBtnUrl} className={`${styles.btn} ${styles.btn_primary}`}>
+            <a href={pickupBtnUrl} className={`${styles.btn} ${styles.btn_primary}`} target='_blank'>
               {pickupBtnText}
             </a>
             <a href={callBtnUrl} className={`${styles.btn} ${styles.btn_secondary}`}>

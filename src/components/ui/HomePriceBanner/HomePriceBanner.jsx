@@ -7,7 +7,7 @@ function HomePriceBanner({title, description, btn_title, btn_link, image}) {
     <div className="container">
       <div className="homePriceBanner-grid">
         <div className="homePriceBanner__content">
-          <h3>{title}</h3>
+          <h2>{title}</h2>
           <p>{description}</p>
           <Link href= {btn_link} className = "btn btn--secondary">{btn_title}</Link>
           

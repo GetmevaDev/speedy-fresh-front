@@ -6,7 +6,7 @@ function PriceCardFull({title, pricingCardItems, price_btn }) {
   return (
     <section className={styles.pricingCard}>
     <div className="container">
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <div className={styles.pricingCard__wrapper} style={{gridTemplateColumns:`repeat(${pricingCardItems.length}, 1fr)`}}>
         {pricingCardItems.map((item) => {
           return (

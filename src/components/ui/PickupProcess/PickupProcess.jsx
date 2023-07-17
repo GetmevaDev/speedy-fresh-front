@@ -4,7 +4,7 @@ function PickupProcess({title, items}) {
     <section className="pickUpProcess ">
       
         <div className="container">
-          <h3>{title}</h3>
+          <h2>{title}</h2>
           <div className="pickUpProcess__card-wrapper">
           {items?.map((item, index) => {
           return (

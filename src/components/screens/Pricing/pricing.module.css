@@ -3,13 +3,13 @@
   grid-template-columns: 55% 38% ;
   gap: 7% ;
 }
-.priceCardGrid h3 {
+.priceCardGrid h2 {
   color: #FFF;
 font-size: 40px;
 font-weight: 700;
 line-height: 58px; 
 text-transform: uppercase;
-text-align: start;
+text-align: center;
 }
 .priceCardGrid a {
   padding: 30px 0;

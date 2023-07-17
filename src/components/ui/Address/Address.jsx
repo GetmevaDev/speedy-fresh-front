@@ -16,15 +16,17 @@ function Address({title, visitUsCardArr}) {
   return (
     <section className='addressSection'>
     <div className="container">
-      <h3 className="address__title">{title}</h3>
+      <h2 className="address__title">{title}</h2>
       <div className=" address-wrapper ">
-        {visitUsCardArr?.map((item)=>{
+        {visitUsCardArr?.map((item, index)=>{
+          const isLastItem = index === visitUsCardArr.length - 1;
           return(
             <AddressCard
                key={item.id}
-              img={item.image.data.attributes.url}
-              title={item.title}
-              subtitle={item.subtitle}
+               img={item.image.data.attributes.url}
+               title={item.title}
+               subtitle={item.subtitle}
+               tel={isLastItem ? item.subtitle: false}
             />
           )
         })}

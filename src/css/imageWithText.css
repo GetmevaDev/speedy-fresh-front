@@ -15,7 +15,7 @@
   margin-top: 62px;
 }
 
-.aboutBanner__text h3 {
+.aboutBanner__text h2 {
   margin-bottom: 20px;
 }
 .aboutBanner__img img {
@@ -64,7 +64,7 @@
   .aboutBanner__text p {
     font-size: 15px;
   }
-  .aboutBanner__text h3 {
+  .aboutBanner__text h2 {
     font-size: 30px;
   }
   .aboutBanner {
@@ -96,7 +96,7 @@
     font-size: 15px;
     text-align: center;
   }
-  .aboutBanner__text h3 {
+  .aboutBanner__text h2 {
     font-size: 30px;
     text-align: center;
   }

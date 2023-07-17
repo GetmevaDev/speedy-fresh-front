@@ -17,19 +17,12 @@ body {
 h2,
 .h2 {
   font-weight: 700;
-  font-size: 45px;
-  line-height: 60px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-h3,
-.h3 {
-  font-weight: 700;
   font-size: 50px;
   line-height: 58px;
   text-transform: uppercase;
   color: #ffffff;
 }
+
 p,
 .p {
   font-weight: 400;

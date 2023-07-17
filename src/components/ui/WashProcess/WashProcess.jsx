@@ -4,7 +4,7 @@ import React, { Fragment } from "react";
 function WashProcess({ title, items }) {
   return (
     <section className="washProcces container">
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <div className="washProcess__card-wprapper">
         {items?.map((item, index) => {
           return (

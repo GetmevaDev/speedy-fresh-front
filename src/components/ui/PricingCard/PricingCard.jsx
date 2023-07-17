@@ -7,7 +7,7 @@ function PricingCard({ title, pricingCardItems }) {
   return (
     <section className={styles.pricingCard}>
       <div className="container">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <div className={styles.pricingCard__wrapper}>
           {pricingCardItems.map((item) => {
             return (

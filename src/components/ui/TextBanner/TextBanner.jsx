@@ -5,7 +5,7 @@ function TextBanner({title,subtitle,  text}) {
   return (
     <div className="container"  >
       <div className="textBanner">
-      {title && <h3 >{title}</h3>}
+      {title && <h2 >{title}</h2>}
       {subtitle && <h4 >{subtitle}</h4>}
       {text && <p >{text}</p>} 
 

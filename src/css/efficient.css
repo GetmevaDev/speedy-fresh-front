@@ -1,5 +1,5 @@
 .efficient,
-.efficient2 h3 {
+.efficient2 h2 {
   text-align: center;
 }
 .efficient {
@@ -114,7 +114,7 @@
   .efficient .roundIcon-wrapper span {
     font-size: 20px;
   }
-  .efficient2 h3 {
+  .efficient2 h2 {
     font-size: 28px;
   }
 
@@ -151,7 +151,7 @@
   }
 }
 @media (max-width: 426px) {
-  .efficient2 h3 {
+  .efficient2 h2 {
     font-size: 20px;
   }
   .efficient .efficient-wrapper {

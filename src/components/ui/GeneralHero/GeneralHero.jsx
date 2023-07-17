@@ -10,7 +10,7 @@ function GeneralHero({title, subtitle, image, callBtnText, callBtnUrl, pickupBtn
           {title && <h1>{title}</h1>}
           {subtitle && <h4>{subtitle}</h4>}
           <div className="hero__cta">
-            <a href={pickupBtnUrl } className="btn btn--primary">
+            <a href={pickupBtnUrl } className="btn btn--primary" target='_blank'>
              {pickupBtnText}
             </a>
             <a href={callBtnUrl} className="btn btn--secondary">
