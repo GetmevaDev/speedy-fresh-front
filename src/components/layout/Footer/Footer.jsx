@@ -64,15 +64,16 @@ function Footer() {
   const route = usePathname();
   return (
     <footer className={styles.footer}>
-     
       <ul className={styles.footer__nav}>
         {navItem.map((item) => {
           return (
             <Fragment key={item.id}>
-              <li  className={styles.nav__item}>
+              <li className={styles.nav__item}>
                 <Link
                   onClick={() => handleClick(item)}
-                  className={route === item.url ? styles.active : styles.nav__link}
+                  className={
+                    route === item.url ? styles.active : styles.nav__link
+                  }
                   href={item.url}
                 >
                   {item.title}
@@ -82,7 +83,7 @@ function Footer() {
                 <ul className={styles.child__list}>
                   {item.SubLink.map((sub_item) => {
                     return (
-                      <li key = {sub_item.id} className={styles.nav__item}>
+                      <li key={sub_item.id} className={styles.nav__item}>
                         <Link
                           className={styles.nav__link}
                           href={item.url + sub_item.url}
@@ -101,30 +102,37 @@ function Footer() {
 
       <div className={styles.footer__rights}>
         <div className="container">
-        <div className={styles.footer__rights_wrapper}>
-          <p>
-            © 2023 <span>Speedy Fresh Laundromat</span> All rights reserved
-          </p>
-          <div className={styles.footer__logo}>
-            <div className={styles.footer__logo_wrapper}>
-              <img loading="lazy" src="/images/RGM.svg" alt="rgm" />
-              <p>
-                Web Design & Digital Marketing by
-                <a href="https://robertgerov.com/" className={styles.rgm}>
-                  Robert Gerov Media
-                </a>
-              </p>
-            </div>
+          <div className={styles.footer__rights_wrapper}>
+            <p>
+              © 2023 <span>Speedy Fresh Laundromat</span> All rights reserved
+            </p>
+            <div className={styles.footer__logo}>
+              <div className={styles.footer__logo_wrapper}>
+                <img loading="lazy" src="/images/RGM.svg" alt="rgm" />
+                <p>
+                  Web Design & Digital Marketing by
+                  <a href="https://robertgerov.com/" className={styles.rgm}>
+                    Robert Gerov Media
+                  </a>
+                </p>
+              </div>
 
-            <Link
-              className={styles.accessibility_policy}
-              href="/accessibility-policy-and-commitment-statement"
-            >
-              Accessibility Policy and Commitment Statement
-            </Link>
+              <Link
+                className={styles.accessibility_policy}
+                href="/accessibility-policy-and-commitment-statement"
+              >
+                Accessibility Policy and Commitment Statement
+              </Link>
+            </div>
           </div>
         </div>
-        </div>
+      </div>
+
+      <div className={styles.fixed_btn}>
+        <a href="https://speedyfreshlaundromat.curbsidelaundries.com/" className={styles.btn_pickup}>
+          Schedule a Pickup
+        </a>
+        <a href="tel:(718)4900334" className={styles.btn_call}>Click to call</a>
       </div>
     </footer>
   );

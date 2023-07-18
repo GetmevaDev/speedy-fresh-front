@@ -103,6 +103,30 @@
   font-weight: 400;
   margin-left: 8px;
 }
+.fixed_btn {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.fixed_btn a {
+  padding: 10px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_pickup {
+  background-color: #00aeef;
+  color: white;
+}
+.btn_call {
+  background-color: white;
+  color: #00aeef;
+}
 
 @media (max-width: 700px) {
   .footer__nav {
