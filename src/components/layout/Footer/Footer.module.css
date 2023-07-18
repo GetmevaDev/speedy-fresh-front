@@ -104,7 +104,7 @@
   margin-left: 8px;
 }
 .fixed_btn {
-  display: grid;
+  display: none;
   grid-template-columns: 50% 50%;
   align-items: center;
   justify-content: center;
@@ -139,5 +139,8 @@
   }
   .footer__logo {
     margin-top: 20px;
+  }
+  .fixed_btn {
+    display: grid;
   }
 }

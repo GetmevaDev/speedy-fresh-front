@@ -6,3 +6,9 @@
 .washAndFold .aboutBanner {
   margin-top: 0;
 }
+@media (max-width:600px) {
+  .washAndFold .hero__content {
+    width: 400px;
+    margin-top: 62px;
+  }
+}
