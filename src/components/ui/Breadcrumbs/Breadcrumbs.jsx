@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-function Breadcrumbs({ current, sub }) {
+function Breadcrumbs({ current, sub, prev, prev_url }) {
   return (
     <div className="container">
     <div className="breadcrumbs">
@@ -10,8 +10,8 @@ function Breadcrumbs({ current, sub }) {
       </Link>
       
       {sub && (
-        <Link href="/pickup-delivery" className="previous">
-          » Pickup & Delivery
+        <Link href={prev_url} className="previous">
+          » {prev}
         </Link>
       )}
 

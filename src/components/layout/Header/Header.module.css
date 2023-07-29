@@ -9,9 +9,6 @@
   padding-top: 20px;
 }
 
-.logo__link {
-  background-color: #1e1e1e;
-}
 
 
 .nav {
@@ -61,7 +58,10 @@
   background-color: var(--primary-color);
   display: block;
 }
-
+.logo__link {
+  position: relative;
+  z-index: 3;
+}
 .logo__link::after {
   height: 0px !important;
   background-color: #1e1e1e !important;

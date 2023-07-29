@@ -29,7 +29,7 @@ export default function CommercialLaundryScreen({ attributes }) {
         image={attributes?.Hero?.image?.data?.attributes?.url}
       />
 
-      <Breadcrumbs current="" sub="Commercial Laundry Services" />
+      <Breadcrumbs  sub="Commercial Laundry Services" prev="Pickup Delivery" prev_url='/pickup-delivery' />
       <section className="pickupDeliveryScreen__reverseBanner">
         <ImageWithText
           paragraph={attributes?.ImageWithText?.description}

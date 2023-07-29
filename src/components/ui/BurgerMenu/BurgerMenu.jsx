@@ -50,6 +50,12 @@ export const navItem = [
     url: "/contact-us",
     SubLink: [],
   },
+  {
+    id: 8,
+    title: "Blog",
+    url: "/blog",
+    SubLink: [],
+  }
 ];
 
 

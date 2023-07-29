@@ -1,5 +1,5 @@
 "use client";
-import React, { Fragment, useState } from "react";
+import React, {  useState } from "react";
 import styles from "./Header.module.css";
 import Link from "next/link";
 // import { fetchData } from '@/components/utils/fetchData'
@@ -58,6 +58,12 @@ export const navItem = [
     url: "/contact-us",
     SubLink: [],
   },
+  {
+    id: 8,
+    title: "Blog",
+    url: "/blog",
+    SubLink: [],
+  }
 ];
 
 function Header() {
