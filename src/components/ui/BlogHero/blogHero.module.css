@@ -7,10 +7,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 530px;
 }
 
 .marginTop {
-  margin-top: 300px;
+  margin-top: 430px;
 }
 .blogHero h1 {
   color: #fff;
@@ -63,4 +64,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .blogHero {
+    padding: 166px 0 73px;
+    height: 450px;
+  }
+  .marginTop {
+    margin-top: 370px;
+  }
+}
+@media (max-width: 850px) {
+  .blogHero {
+    padding: 140px 0 73px;
+    height: 350px;
+  }
+  .marginTop {
+    margin-top: 250px;
+  }
+  .cta__wrapper .pickup {
+    font-size: 13px;
+  }
+  .cta__wrapper .phone {
+    font-size: 13px;
+  }
+}
+@media (max-width: 700px) {
+  .blogHero {
+    padding: 110px 0 73px;
+    height: 250px;
+  }
+  .marginTop {
+    margin-top: 170px;
+  }
+  
+  .cta__wrapper {
+    width: 70%;
+  }
+  .blogHero h1 {
+    font-size: 50px;
+  }
 }
