@@ -1,6 +1,9 @@
 .blogBody {
   margin-top: 62px;
 }
+.blogBody  li {
+  list-style: auto;
+}
 .blogBody__wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
