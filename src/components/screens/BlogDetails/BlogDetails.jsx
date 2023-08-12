@@ -5,7 +5,7 @@ import BlogHero from "@/components/ui/BlogHero/BlogHero";
 import BlogBody from '@/components/ui/BlogBody/BlogBody';
 
 function BlogDetailscreen({blog, hero, SEO}) {
-  
+  // console.log(blog);
   return (
     <RootLayout 
       title={SEO?.title}

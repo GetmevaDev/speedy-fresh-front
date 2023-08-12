@@ -98,11 +98,13 @@
   .marginTop {
     margin-top: 170px;
   }
-  
+
   .cta__wrapper {
     width: 70%;
   }
   .blogHero h1 {
-    font-size: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 15px;
   }
 }

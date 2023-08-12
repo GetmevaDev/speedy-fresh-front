@@ -2,6 +2,7 @@
 import BlogDetailscreen from '@/components/screens/BlogDetails/BlogDetails'
 import React from 'react'
 import { fetchData } from "@/components/utils/fetchData";
+import handleSlug from '@/components/utils/handleSlug';
 
 export async function getStaticProps(context) {
   const slug = context.params.id
@@ -10,7 +11,7 @@ export async function getStaticProps(context) {
   } = await fetchData("blog");
 
   const blog_hero = attributes.Hero
-  const finded = attributes.blog_card.find(item=> item.title.toLowerCase().split(" ").join("-") == slug)
+  const finded = attributes.blog_card.find(item=> handleSlug(item.title) == slug)
   const seo = attributes.SEO
   if (!attributes) {
     return {
@@ -21,7 +22,8 @@ export async function getStaticProps(context) {
   return {
     props: {
       finded,
-      blog_hero
+      blog_hero,
+      seo
     },
     revalidate: 60, // In seconds
   };
@@ -32,10 +34,9 @@ export async function getStaticPaths() {
   
   const paths = data?.attributes?.blog_card?.map((item)=>{
     return{
-      params:{id: item.title.toLowerCase().split(" ").join("-")}
+      params:{id: handleSlug(item.title)}
     }
   })
-
   return {
     paths,
     fallback: false,
