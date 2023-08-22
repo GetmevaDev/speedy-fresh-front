@@ -4,21 +4,21 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs/Breadcrumbs";
 import BlogHero from "@/components/ui/BlogHero/BlogHero";
 import BlogBody from '@/components/ui/BlogBody/BlogBody';
 
-function BlogDetailscreen({blog, hero, SEO}) {
-  // console.log(blog);
+function BlogDetailscreen({blog, hero}) {
   return (
     <RootLayout 
-      title={SEO?.title}
-      description={SEO?.description}
-      image={SEO?.image}
-      twitterCard={SEO?.twitterCard}
-      twitterDescription={SEO?.twitterDescription}
-      twitterDomain={SEO?.twitterDomain}
-      twitterImage={SEO?.twitterImage}
-      twitterTitle={SEO?.twitterTitle}
-      twitterUrl={SEO?.twitterUrl}
+    title={blog.SEO?.title}
+    description={blog.SEO?.description}
+    image={blog.SEO?.image}
+    twitterCard={blog.SEO?.twitterCard}
+    twitterDescription={blog.SEO?.twitterDescription}
+    twitterDomain={blog.SEO?.twitterDomain}
+    twitterImage={blog.SEO?.twitterImage}
+    twitterTitle={blog.SEO?.twitterTitle}
+    twitterUrl={blog.SEO?.twitterUrl}
     
     >  
+   
 
     <BlogHero
       title={blog.title}      

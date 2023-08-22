@@ -12,7 +12,6 @@ export async function getStaticProps(context) {
 
   const blog_hero = attributes.Hero
   const finded = attributes.blog_card.find(item=> handleSlug(item.title) == slug)
-  const seo = attributes.SEO
   if (!attributes) {
     return {
       notFound: true,
@@ -23,7 +22,6 @@ export async function getStaticProps(context) {
     props: {
       finded,
       blog_hero,
-      seo
     },
     revalidate: 60, // In seconds
   };
@@ -44,7 +42,7 @@ export async function getStaticPaths() {
 }
 export default  function BlogDetails({finded, blog_hero, seo}) {
 
-  return (<BlogDetailscreen blog={finded} hero = {blog_hero} SEO={seo}/>)
+  return (<BlogDetailscreen blog={finded} hero = {blog_hero}/>)
     
   
 }
