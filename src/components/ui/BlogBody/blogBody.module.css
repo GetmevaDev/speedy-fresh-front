@@ -7,16 +7,22 @@
 .blogBody__wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
-  align-items: center;
   justify-content: center;
   gap: 30px ;
 }
 .blogBody__image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 30px;
 }
-
+.blogBody h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.blogBody h3 {
+  font-size: 25px;
+  line-height: 30px;
+}
 @media(max-width:700px) {
   .blogBody__wrapper {
     grid-template-columns: 90%;
